@@ -1,0 +1,207 @@
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #FFF0ED; 
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+#nitro{
+    color: #393939;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0 20px;
+}
+  
+.menu-items {
+    display: flex ;
+    list-style: none;
+    gap: 1px;
+}
+  
+.menu-items li a {
+    color: #393939;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    display: block;
+
+}
+  
+.menu-items li a:hover {
+    border-radius: 8px;
+    background-color: #ddd; 
+  }
+  
+.menu-items li:last-child a {
+    color: #5BACC3;
+    border-radius: 8px; 
+}
+
+
+.circle-box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center; 
+}
+
+.circle-box h1 {
+    color: white; 
+    background-color: #393939;
+    font-weight: 200;
+    font-size: 50px;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    padding: 1rem;
+  
+
+}
+
+.circle-box .circle {    
+    width: 100%; 
+    height: 700px; 
+    background-position: center;
+    background-size: cover;
+}
+
+#products ul {
+    background-color: #393939;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: auto;
+    margin-top: 2rem;
+}
+
+#products ul li{
+    position: relative;
+    margin: 10px 2rem;
+
+}
+
+#products li a{
+    color: white;
+    text-decoration: none ;
+    
+
+}
+
+#products ul li:not(:last-child)::after {
+    content: ''; 
+    position: absolute;
+    right: -30px; 
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); 
+    height: 24px; 
+    width: 4px; 
+    background-color: #5BACC3; 
+}
+
+  
+.main-page {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    width: 100%;
+    margin: auto; 
+    text-align: justify;
+}
+
+.main-page h2{
+    font-weight: 200;
+    font-size: 40px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: #393939;
+
+}
+
+.main-page h3{
+    font-weight: 200;
+    font-size: 25px;
+    color: #393939;
+
+    
+}
+
+.hot-drinks, .pastries  {
+    background-color: #fff0ed7a; 
+    color: #393939;
+    text-align: center;
+    padding-bottom: 2rem;
+    
+}
+
+.cold-drinks{
+    color: #393939;
+    background-color: #5badc321 ;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+main div p:nth-child(2) {
+    font-style: italic;
+    
+}
+
+main div p:nth-child(3) {
+    color: #5BACC3;
+    
+}
+
+/* Footer styles */
+footer {
+    background-color: #5badc321;
+    color: #393939;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+footer div h3 {
+    padding-top: 1rem;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+footer div p {
+    padding-top: 1rem;
+}
+
+#address, #hours, #social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#social img {
+    margin: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    
+    .product-card {
+        flex-direction: column;
+    }
+}

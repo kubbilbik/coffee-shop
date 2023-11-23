@@ -1,0 +1,192 @@
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #FFF0ED; 
+}
+
+.logo {
+    height: auto;
+    width: auto;
+}
+
+#nitro{
+    color: #393939;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0 20px;
+}
+  
+.menu-items {
+    display: flex ;
+    list-style: none;
+    gap: 1px;
+}
+  
+.menu-items li a {
+    color: #393939;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    display: block;
+
+}
+  
+.menu-items li a:hover {
+    border-radius: 8px;
+    background-color: #ddd; 
+}
+  
+.menu-items li:last-child a {
+    color: #5BACC3;
+    border-radius: 8px; 
+}
+
+/* Main styles */
+
+main {
+    background-color: #FFF0ED; 
+     position: relative;
+    margin-top: 2rem;
+}
+
+main h1{
+    margin-bottom: 2rem;
+    color: #393939;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+main p{
+    margin-bottom: 2rem;
+    color: #393939;
+    font-weight: 200;
+    font-size: 17px;   
+}
+
+.shop-button{
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 15px; 
+    height: 35px; 
+    width: 100px; 
+    background-color: #5BACC3;
+    border: none;
+    cursor: pointer;
+}
+
+main img{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Product card styles */
+.product-card {
+    padding: 5rem;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.product-card h2{
+    margin: 2rem;
+    color: #393939;
+    font-size: 3em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.product-card .products h3{
+    color: #393939;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.product-card div p:nth-child(3) {
+    color: #5BACC3;
+    margin-bottom: 2rem;
+    
+}
+
+.products {
+    text-align: center;
+}
+
+.products img {
+    max-width: 100%;
+    height: auto;
+}
+
+div button{
+    text-align: center;
+    color: white;
+    font-size: 15px; 
+    height: 35px; 
+    width: 100px; 
+    background-color: #5BACC3;
+    border: none;
+    cursor: pointer;
+}
+
+div .discount-code{
+    text-align: center;
+    margin: 2rem;
+    background-color: #393939;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    
+}
+
+/* Footer styles */
+footer {
+    
+    background-color: #FFF0ED;
+    color: #393939;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+footer div h3 {
+    padding-top: 1rem;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+footer div p {
+    padding-top: 1rem;
+}
+
+#address, #hours, #social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#social img {
+    margin: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    
+    .product-card {
+        flex-direction: column;
+    }
+}
